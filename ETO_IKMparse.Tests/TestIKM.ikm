@@ -1,0 +1,27 @@
+﻿Node %%ExportRoot
+	Child Root As :Project
+	End Child
+End Node
+
+Node 
+	Child Root As :Project
+
+	End Child
+
+	Rule MyRule As List = {"", "1""" }
+
+End Node
+
+Node Root.SomeChildName
+	Rule MyRefchains As Any = {{This.IsA.Refchain}}
+	
+	Rule SomeVector As Vector = Vector_(7.99999999999999, 21.0, 51.0, WorldFrame())
+
+	Parent Rule SomeRule As Number = 10.0
+
+	Rule AnotherRule? As Boolean = True
+
+	Rule StringRule_1 as String = "a"
+
+	Rule NameRule As Name = :fasdfasdf
+End Node
